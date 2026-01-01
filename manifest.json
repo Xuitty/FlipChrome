@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "網頁循環翻轉工具",
+  "version": "1.0",
+  "description": "透過快速鍵 Ctrl+Shift+Z 循環切換 0 度、垂直翻轉和水平翻轉。",
+  "permissions": ["activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "commands": {
+    "toggle-page-rotation": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Z",
+        "mac": "Command+Shift+Z"
+      },
+      "description": "循環切換網頁 (0° / 垂直 / 水平 翻轉)"
+    }
+  }
+}
